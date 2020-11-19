@@ -8,8 +8,19 @@
   --accent-color: #ff6c00;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--main-font);
+}
+
+img {
+  display: block;
 }
 
 .link {
@@ -24,14 +35,39 @@ body {
   font-style: normal;
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 /* ======================= COMPONENTS ======================= */
 .modal-btn {
+  min-width: 160px;
+  height: 40px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .social-link {
@@ -52,6 +88,7 @@ body {
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .undertitle-light-theme {
@@ -81,7 +118,7 @@ body {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.667;
+  line-height: 1.167;
   letter-spacing: 0.05em;
 }
 
@@ -95,6 +132,36 @@ body {
 /* ======================= END COMPONENTS ======================= */
 
 /* ======================= HEADER ======================= */
+.header {
+  padding: 32px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .address {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .navigation-list-link,
 .header-tel {
@@ -114,6 +181,24 @@ body {
 /* ======================= END HEADER ======================= */
 
 /* ======================= HERO ======================= */
+.hero .container {
+  display: flex;
+}
+
+.hero .description {
+  width: 400px;
+}
+
+.hero-left-side {
+  width: 100px;
+}
+
+.hero-right-side {
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
 
 .hero-title {
   font-family: var(--secondary-font);
@@ -121,20 +206,76 @@ body {
   font-size: 72px;
   line-height: 1.181;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 
 /* ======================= END HEADER ======================= */
 
 /* ======================= ABOUT ======================= */
+.about .container {
+  display: flex;
+}
+
+.about .title {
+  margin-bottom: 20px;
+}
+
+.about .description {
+  margin-bottom: 20px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-right-side {
+  padding-left: 64px;
+}
+
 .about-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.857;
   letter-spacing: 0.02em;
+  margin-bottom: 40px;
+  padding-right: 60px;
 }
 /* ======================= END ABOUT ======================= */
 
 /* ======================= SERVICES ======================= */
+.services .title {
+  margin-bottom: 44px;
+}
+
+.services .modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services-list-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  width: 50%;
+  padding: 30px 40px;
+  border: 1px solid #333;
+}
+
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services-list-name,
 .services-list-price {
   font-weight: 400;
@@ -146,6 +287,47 @@ body {
 /* ======================= END SERVICES ======================= */
 
 /* ======================= ADVANTAGES ======================= */
+.advantages .container {
+  display: flex;
+}
+
+.advantages .title {
+  margin-bottom: 20px;
+}
+
+.advantages .description {
+  padding-right: 100px;
+}
+
+.advantages-left-side {
+  flex-shrink: 0;
+  width: 470px;
+  padding-left: 100px;
+}
+
+.advantages-right-side {
+  flex-grow: 1;
+  padding-left: 130px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.advantages-list-item {
+  width: 170px;
+  padding: 20px;
+  min-height: 133px;
+  border: 1px solid red;
+}
+
+.advantages-list-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .advantages-list-count {
   font-weight: 700;
   font-size: 42px;
@@ -153,6 +335,7 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
+  margin-bottom: 6px;
 }
 
 .advantages-list-description {
@@ -165,6 +348,19 @@ body {
 /* ======================= END ADVANTAGES ======================= */
 
 /* ======================= MASTERS ======================= */
+.masters .title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.masters-list-item-img {
+  margin-bottom: 30px;
+}
+
 .masters-list-item-title {
   font-weight: 400;
   font-size: 18px;
@@ -172,6 +368,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 
 .masters-list-item-position {
@@ -185,7 +382,14 @@ body {
 /* ======================= END MASTERS ======================= */
 
 /* ======================= GALLERY ======================= */
+.gallery .undertitle {
+  margin-bottom: 44px;
+}
 
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+}
 /* ======================= END GALLERY ======================= */
 
 /* ======================= CONTACT ======================= */
@@ -207,6 +411,20 @@ body {
 /* ======================= END CONTACT ======================= */
 
 /* ======================= FOOTER ======================= */
+.footer {
+  outline: 1px solid red;
+  padding: 56px 0;
+}
+
+.footer .social-links {
+  margin-left: auto;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
 .copyright {
   font-weight: 600;
   font-size: 11px;
