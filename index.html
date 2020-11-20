@@ -18,7 +18,9 @@
         <div class="container">
             <nav class="navigation">
                 <a href="./index.html" class="logo link" aria-label="логотип барбершопа">
-                    <img src="./images/header/logo.svg" alt="логотип" class="logo-img" width="68" height="54">
+                    <svg class="logo-svg">
+                        <use href="./images/sprite.svg#logo"></use>
+                    </svg>
                 </a>
                 <ul class="navigation-list list">
                     <li class="navigation-list-item">
@@ -58,7 +60,7 @@
                 <div class="hero-right-side">
                     <p class="undertitle undertitle-dark-theme" lang="en">A hair salon for men in Kyiv</p>
                     <h1 class="hero-title" lang="en">BarberShop</h1>
-                    <p class="description">Мы эксперты в модных мужских стрижках.
+                    <p class="description description-dark-theme">Мы эксперты в модных мужских стрижках.
                         Работаем быстро, осторожно и со вкусом.</p>
                 </div>
             </div>
@@ -98,7 +100,7 @@
         <section class="services section">
             <div class="container">
                 <p class="undertitle undertitle-dark-theme">Проведи время в компании лучших мастеров</p>
-                <h2 class="title">Услуги и цены</h2>
+                <h2 class="title title-dark-theme">Услуги и цены</h2>
                 <div class="services-list-wrapper">
                     <ul class="services-list list">
                         <li class="services-list-item">
@@ -144,7 +146,7 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="modal-btn">онлайн-запись</button>
+                <button type="button" class="modal-btn modal-btn-dark-theme">онлайн-запись</button>
             </div>
         </section>
 
@@ -190,20 +192,116 @@
                     <li class="masters-list-item">
                         <img class="masters-list-item-img" src="./images/masters/master-1.jpg" alt="фото мастера"
                             width="370" height="346">
-                        <h3 class="masters-list-item-title" lang="en">John Smith</h3>
-                        <p class="masters-list-item-position" lang="en">Extreme Barber</p>
+                        <div class="masters-list-content-wrapper">
+                            <h3 class="masters-list-item-title" lang="en">John Smith</h3>
+                            <p class="masters-list-item-position" lang="en">Extreme Barber</p>
+                            <ul class="social-list list">
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="masters-list-item">
                         <img class="masters-list-item-img" src="./images/masters/master-2.jpg" alt="фото мастера"
                             width="370" height="346">
-                        <h3 class="masters-list-item-title" lang="en">Michele Doe</h3>
-                        <p class="masters-list-item-position" lang="en">Extreme Barber</p>
+                        <div class="masters-list-content-wrapper">
+                            <h3 class="masters-list-item-title" lang="en">Michele Doe</h3>
+                            <p class="masters-list-item-position" lang="en">Extreme Barber</p>
+                            <ul class="social-list list">
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="masters-list-item">
                         <img class="masters-list-item-img" src="./images/masters/master-3.jpg" alt="фото мастера"
                             width="370" height="346">
-                        <h3 class="masters-list-item-title" lang="en">Alan Black</h3>
-                        <p class="masters-list-item-position" lang="en">Extreme Barber</p>
+                        <div class="masters-list-content-wrapper">
+                            <h3 class="masters-list-item-title" lang="en">Alan Black</h3>
+                            <p class="masters-list-item-position" lang="en">Extreme Barber</p>
+                            <ul class="social-list list">
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-item">
+                                    <a href="#" class="social-list-link link">
+                                        <svg class="social-list-svg">
+                                            <use href="./images/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
