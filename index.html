@@ -7,6 +7,7 @@
     <title>Барбершоп</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
@@ -17,7 +18,7 @@
     <header class="header">
         <div class="container">
             <nav class="navigation">
-                <a href="./index.html" class="logo link" aria-label="логотип барбершопа">
+                <a href="./index.html" class="logo link animate__shakeX" aria-label="логотип барбершопа">
                     <svg class="logo-svg">
                         <use href="./images/sprite.svg#logo"></use>
                     </svg>
@@ -40,7 +41,7 @@
             <address class="address">
                 <a href="tel:+380441111111" class="header-tel link">+38 044 111 11 11</a>
             </address>
-            <button type="button" class="modal-btn">онлайн-запись</button>
+            <button type="button" class="modal-btn modal-btn-dark-theme" data-modal-open>онлайн-запись</button>
         </div>
     </header>
     <main>
@@ -104,44 +105,53 @@
                 <div class="services-list-wrapper">
                     <ul class="services-list list">
                         <li class="services-list-item">
-                            <span class="services-list-name">Мужская стрижка</span><span class="services-list-price">от
+                            <span class="services-list-name">Мужская стрижка</span>
+                            <span class="services-undertitle"></span>
+                            <span class="services-list-price">от
                                 300
                                 грн.</span>
                         </li>
                         <li class="services-list-item">
-                            <span class="services-list-name">Стрижка бороды</span><span class="services-list-price">от
+                            <span class="services-list-name">Стрижка бороды</span>
+                            <span class="services-undertitle"></span>
+                            <span class="services-list-price">от
                                 200
                                 грн.</span>
                         </li>
                         <li class="services-list-item">
-                            <span class="services-list-name">Стрижка усов</span><span class="services-list-price">от 200
+                            <span class="services-list-name">Стрижка усов</span>
+                            <span class="services-undertitle"></span>
+                            <span class="services-list-price">от 200
                                 грн.</span>
                         </li>
                         <li class="services-list-item">
-                            <span class="services-list-name">Бритье опасной бритвой</span><span
-                                class="services-list-price">от
+                            <span class="services-list-name">Бритье опасной бритвой</span>
+                            <span class="services-undertitle"></span>
+                            <span class="services-list-price">от
                                 200 грн.</span>
                         </li>
                     </ul>
                     <ul class="services-list list">
                         <li class="services-list-item">
-                            <span class="services-list-name">Cтрижка у стажера</span><span
-                                class="services-list-price">от 50
+                            <span class="services-list-name">Cтрижка у стажера</span>
+                            <span class="services-undertitle"></span>
+                            <span class="services-list-price">от 50
                                 грн.</span>
                         </li>
                         <li class="services-list-item">
-                            <span class="services-list-name">Стрижка под насадку</span><span
-                                class="services-list-price">от
-                                200
-                                грн.</span>
+                            <span class="services-list-name">Стрижка под насадку</span>
+                            <span class="services-undertitle"></span>
+                            <span class="services-list-price">от 200 грн.</span>
                         </li>
                         <li class="services-list-item">
-                            <span class="services-list-name">Детская стрижка (до 12 лет)</span><span
-                                class="services-list-price">от 300 грн.</span>
+                            <span class="services-list-name">Детская стрижка (до 12 лет)</span>
+                            <span class="services-undertitle"></span>
+                            <span class="services-list-price">от 300 грн.</span>
                         </li>
                         <li class="services-list-item">
-                            <span class="services-list-name">Камуфлирование седины</span><span
-                                class="services-list-price">от
+                            <span class="services-list-name">Камуфлирование седины</span>
+                            <span class="services-undertitle"></span>
+                            <span class="services-list-price">от
                                 200 грн.</span>
                         </li>
                     </ul>
@@ -379,6 +389,15 @@
             </ul>
         </div>
     </footer>
+
+    <!-- BACKDROP -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>X</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
