@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+input {
+  font-family: inherit;
+}
+
+.contact-form {
+  width: 400px;
+  min-height: 200px;
+  box-shadow: 0 6px 4px 0 #ccc;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.contact-form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  border: 2px solid #ccc;
+}
+
+.contact-form__input:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-form__btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form__btn {
+  min-width: 100px;
+  height: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.contact-form__input:focus {
+  outline: none;
+}
+
+.contact-form__input:required:focus:valid {
+  border: 2px solid green;
+}
+
+.contact-form__input:required:focus:invalid {
+  border: 2px solid tomato;
+}
+
+.contact-form__box {
+  margin-bottom: 20px;
+}
+
+.contact-form__box-title {
+  margin-bottom: 16px;
+}
+
+.contact-form__message {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}

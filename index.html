@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <form action="#" class="contact-form">
+        <input type="text" name="user-name" class="contact-form__input" placeholder="Имя*" minlength="2" required>
+        <input type="email" name="user-email" class="contact-form__input" placeholder="Email*" required>
+        <input type="tel" name="user-phone" class="contact-form__input" placeholder="096-111-11-11*" required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+
+        <section class="contact-form__box">
+            <h2 class="contact-form__box-title">Your Hobby</h2>
+            <input type="checkbox" name="user-hobby" value="football" id="hobby-football" class="contact-form__check">
+            <label for="hobby-football">football</label>
+
+            <input type="checkbox" name="user-hobby" value="boxing" id="hobby-boxing" class="contact-form__check">
+            <label for="hobby-boxing">boxing</label>
+
+            <input type="checkbox" name="user-hobby" value="swimming" id="hobby-swimming" class="contact-form__check">
+            <label for="hobby-swimming">swimming</label>
+        </section>
+
+        <section class="contact-form__box">
+            <h2 class="contact-form__box-title">Your Age</h2>
+            <label>
+                <input type="radio" name="user-age" value="20" id="" class="contact-form__radio">
+                20
+            </label>
+
+            <label>
+                <input type="radio" name="user-age" value="26" id="" class="contact-form__radio">
+                26
+            </label>
+
+            <label>
+                <input type="radio" name="user-age" value="38" id="" class="contact-form__radio">
+                38
+            </label>
+        </section>
+
+        <section class="contact-form__box">
+            <h2 class="contact-form__box-title">Your message</h2>
+            <textarea class="contact-form__message" name="user-message" placeholder="Сообщение"></textarea>
+        </section>
+
+        <section class="contact-form__box">
+            <h2 class="contact-form__box-title">Yout city</h2>
+            <select name="user-city">
+                <option value="Kyiv">Kyiv</option>
+                <option value="Vinnitsa">Vinnitsa</option>
+                <option value="Kharkov">Kharkov</option>
+            </select>
+        </section>
+
+        <div class="contact-form__btn-wrapper">
+            <button type="submit" class="contact-form__btn">submit</button>
+            <button type="reset" class="contact-form__btn">reset</button>
+        </div>
+    </form>
+</body>
+
+</html>
