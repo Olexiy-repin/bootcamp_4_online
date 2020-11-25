@@ -836,13 +836,17 @@ img {
   content: "";
   display: block;
   width: 16px;
-  height: 16px;
-  outline: 1px solid #000;
+  height: 15px;
+  border: 1px solid #000;
   margin-right: 10px;
 }
 
 .modal-form-policy:checked + .contact-form-policy-label::before {
-  background-color: tomato;
-  border: 4px solid #fff;
+  background-image: url("../images/check.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* width: 18px;
+  height: 17px; */
+  border: none;
 }
 /* ======================= END MODAL FORM ======================= */
