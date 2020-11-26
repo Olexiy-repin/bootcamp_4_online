@@ -37,24 +37,38 @@ img {
 }
 
 .about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .advantages .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -84,13 +98,18 @@ img {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
   margin-right: 70px;
-  animation-duration: 2000ms;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
 }
 
 .logo-svg {
@@ -99,6 +118,8 @@ img {
 }
 
 .navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -113,6 +134,7 @@ img {
   line-height: 1.333;
   letter-spacing: 0.1em;
   color: #fff;
+  -webkit-transition: color 250ms linear;
   transition: color 250ms linear;
 }
 

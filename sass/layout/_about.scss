@@ -13,9 +13,7 @@
 }
 
 .about-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.857;
+  @include font(14px, 400, 26px);
   letter-spacing: 0.02em;
   margin-bottom: 40px;
   padding-right: 60px;

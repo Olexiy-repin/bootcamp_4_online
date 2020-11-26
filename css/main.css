@@ -460,8 +460,8 @@ img {
 }
 
 .about-text {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.857;
   letter-spacing: 0.02em;
   margin-bottom: 40px;
@@ -788,5 +788,25 @@ img {
   line-height: 1.364;
   letter-spacing: 0.2em;
   color: #9da4bd;
+}
+
+.advantages {
+  padding: 100px 0;
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__list-item {
+  padding-left: 20px;
+}
+
+.advantages__list-title {
+  font-size: 20px;
+}
+
+.advantages__list-text {
+  line-height: 1.5;
 }
 /*# sourceMappingURL=main.css.map */

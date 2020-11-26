@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 
 // BASE
 @import "./base/common";
@@ -26,3 +27,33 @@
 @import "./layout/gallery";
 @import "./layout/contact";
 @import "./layout/footer";
+
+// BEM
+
+// block__element--modifier
+// block__element_modifier
+
+// block--modifier
+// block_modifier
+
+// .logo_dark-theme
+
+// .advantages {
+//   padding: 100px 0;
+
+//   &__list {
+//     list-style: none;
+
+//     &-item {
+//       padding-left: 20px;
+//     }
+
+//     &-title {
+//       font-size: 20px;
+//     }
+
+//     &-text {
+//       line-height: 1.5;
+//     }
+//   }
+// }
