@@ -1,27 +1,61 @@
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 31px;
+}
 
-  .about & {
-    display: flex;
-  }
-
-  .advantages & {
-    display: flex;
-  }
-
-  .footer & {
-    display: flex;
-    align-items: center;
-  }
-
-  .header & {
-    display: flex;
-    align-items: center;
-  }
-
-  .hero & {
-    display: flex;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 39px;
+
+    .hero & {
+      display: flex;
+    }
+
+    .about & {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+// .container {
+//   width: 1200px;
+//   padding: 0 15px;
+//   margin: 0 auto;
+
+//   .about & {
+//     display: flex;
+//   }
+
+//   .advantages & {
+//     display: flex;
+//   }
+
+//   .footer & {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .header & {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .hero & {
+//     display: flex;
+//   }
+// }

@@ -21,23 +21,23 @@
   animation-duration: 2000ms;
 }
 
-.logo-svg {
+.logo__svg {
   width: 68px;
   height: 54px;
 }
 
-.navigation-list {
+.navigation__list {
   display: flex;
 }
 
-.navigation-list-item {
+.navigation__list-item {
   &:not(:last-child) {
     margin-right: 40px;
   }
 }
 
-.navigation-list-link,
-.header-tel {
+.navigation__list-link,
+.header__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.333;
