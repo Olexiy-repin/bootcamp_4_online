@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background-color: tomato;
+}
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* Когда ширина вьюпорта будет 500px или больше, применить правила внутри */
+/* @media (min-width: 500px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* Когда ширина вьюпорта будет 768px или больше, применить правила внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* Когда ширина вьпорта будет от 320px до 767px(включительно), применить правила внутри */
+/* @media (max-width: 767px) {
+  body {
+    background-color: pink;
+  }
+} */
+
+/* Когда ширина вьпорта будет от 320px до 500px(включительно), применить правила внутри */
+/* @media (max-width: 500px) {
+  body {
+    background-color: aqua;
+  }
+} */
+
+/* ========== AND ========== */
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: purple;
+  }
+} */
+/* ========== OR ========== */
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: rebeccapurple;
+  }
+} */
+/* ========== TYPES ========== */
+/* 
+  all
+  screen 
+  print
+*/
+
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: rebeccapurple;
+  }
+} */
+/* 
+@media print {
+  .nav-list {
+    display: none;
+  }
+
+  .modal-btn {
+    display: none;
+  }
+} */
+
+/* ========== ORIENTATION ========== */
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  body {
+    background-color: salmon;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  body {
+    background-color: seagreen;
+  }
+}
